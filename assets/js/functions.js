@@ -18,7 +18,6 @@ window.switcher = function(button, id, action) {
 }
 
 window.toggleRelatedInputs = function(element, id, action){
-	console.log(element,id,action)
 	element = element instanceof Event ? element.target : element
 	id = id ?? element.id;
 	let value = element.value;
@@ -63,7 +62,7 @@ window.isMetricSystem = function() {
 }
 
 window.setSystem = function(system) {
-	const add = (system == "imperial" ? ".imperial-system-item" : ".metric-system-item");
+	const add = (system == "metric" ? ".imperial-system-item" : ".metric-system-item");
 	$$(".system-item-hidden").forEach(element => {
 		element.classList.remove("system-item-hidden");
 	});
