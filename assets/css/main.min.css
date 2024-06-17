@@ -3286,9 +3286,9 @@ html.dark .calculator-error__item::before {
   text-transform: uppercase;
   color: #18a69d;
   letter-spacing: 0.05em;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .table-cell--nogap {
